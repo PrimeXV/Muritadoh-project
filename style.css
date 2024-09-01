@@ -2,6 +2,9 @@
 
 :root {
   --color-: rgba(255, 255, 255, 0.373);
+  --black-: black;
+  --green-: green;
+  --greenYellow-: greenyellow;
 }
 
 * {
@@ -41,7 +44,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 20px 60px;
-  background: black;
+  background: var(--black-);
 }
 
 .logo-container img {
@@ -64,7 +67,7 @@ header {
 }
 
 .nav__link:hover {
-  color: greenyellow;
+  color: var(--greenYellow-);
 }
 
 /* header */
@@ -75,12 +78,16 @@ main {
   grid-template-columns: 1.5fr 0.75fr;
   text-align: center;
   height: 100vh;
-  color: black;
+  color: var(--black-);
 }
 
 .aside-sub {
-  border: 2px solid green;
+  border: 2px solid var(--green-);
   gap: 3rem;
+}
+
+.aside-sub li a {
+  color: black;
 }
 /* main section */
 
@@ -91,8 +98,8 @@ footer {
   justify-content: space-evenly;
   align-items: center;
   padding: 1.5rem 0;
-  background: black;
-  border-top: 5px solid green;
+  background: var(--black-);
+  border-top: 5px solid var(--green-);
 }
 
 a span {
